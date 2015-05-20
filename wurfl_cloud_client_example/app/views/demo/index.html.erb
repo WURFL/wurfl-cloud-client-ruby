@@ -1,0 +1,9 @@
+<ul>
+	<li>Device: <%= @wurfl_device['id'] %></li>
+	<% @wurfl_device.device_capabilities.to_hash.each do |key, val| %>
+	<li><%= key %>: <%= val %></li>
+	<% end %>
+</ul>
+
+
+<small><b>Read from cache:</b><%= @wurfl_device.read_from_cache %></small>
