@@ -10,5 +10,5 @@
 # Refer to the COPYING.txt file distributed with this package.
 #
 module WurflCloud
-  VERSION = "1.0.0"
+  VERSION = "1.0.1"
 end
