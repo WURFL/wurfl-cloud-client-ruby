@@ -18,8 +18,14 @@ Requirements
 * json
 * rack
 
+### Sign up for WURFL Cloud
+First, you must go to http://www.scientiamobile.com/cloud and signup
+for a free or paid WURFL Cloud account (see above).  When you've finished
+creating your account, you must copy your API Key, as it will be needed in
+the Client.
+
 Rack Setup
-------------
+----------
 
 If you want to use the cookie cache you need to configure the
 `CacheManager` middleware:
@@ -34,7 +40,7 @@ end
 ```
 
 Rails setup
-------------
+-----------
 
 You need to add the gem to the Gemfile:
 
@@ -50,7 +56,7 @@ Rails.configuration.middleware.use WurflCloud::Rack::CacheManager
 ```
 
 Client configuration
-------------
+--------------------
 
 You can configure the client passing a block to the `WurflCloud.configure`
 method:
@@ -78,7 +84,7 @@ These are the configuration parameters available:
 * `cache_options`: The `cache_options` to be used (defaults to `{}`)
 
 Install
-------------
+-------
 
 Download the latest gem of WURFL Cloud Client for Ruby library from
 ScientiaMobile.com portal site. Then, run the following command:
@@ -88,7 +94,7 @@ gem install wurfl_cloud_client-0.X.Y.gem
 ```
 
 Usage
-------------
+-----
 
 To detect a device you can use the wurfl_detect_device method including
 `WurflCloud::Helper` and passing the current http environment:
@@ -108,7 +114,7 @@ In a ruby on rails application the wurfl_detect_device method is available
 both in the controllers and in the views
 
 Example
-------------
+-------
 
 There is an example Ruby on Rails application in the `wurfl_cloud_client_example`
 folder that demonstrates the usage of the WURFL Cloud Client for Ruby. Please
@@ -116,7 +122,7 @@ refer to the wurfl_cloud.rb initializer and the demo_controller details to see
 how visitor's devices are detected.
 
 Caching
-------------
+-------
 
 You can choose among the following cache classes:
 
