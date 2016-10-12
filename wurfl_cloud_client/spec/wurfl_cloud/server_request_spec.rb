@@ -23,7 +23,7 @@ describe "the client doing a real request" do
         }) 
       else
         WurflCloud.configure do |config|
-          config.host = 'staging.wurflcloud.com'
+          config.host = 'api.wurflcloud.com'
           config.api_key = TEST_API_KEY
         end
         @environment = WurflCloud::Environment.new({"HTTP_USER_AGENT"=>%{Mozilla/5.0 (iPhone; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko) Mobile/7D11}})

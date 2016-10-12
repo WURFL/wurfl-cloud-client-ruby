@@ -30,7 +30,7 @@ module WurflCloud
     # @example
     #   WurflCloud.configure do |config|
     #     config.api_key = '00000000:xxxxxxxxxxxxxxxxxxxxxxxxxxx'
-    #     config.host  = 'staging.wurflcloud.com'
+    #     config.host  = 'api.wurflcloud.com'
     #   end
     def configure(silent = false)
       yield(configuration)
