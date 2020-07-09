@@ -1,3 +1,8 @@
+1.1.0
+    - Updated dependecies to fix vulnerability issues.
+    - Minimum ruby version is now 2.5.0
+    - Updated rails dependency to 6.0.0 (used request.env instead of env to get request data)
+
 1.0.2
     - Updated REST endpoint.
 

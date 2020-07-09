@@ -10,10 +10,10 @@ This is the Ruby Client for accessing the WURFL Cloud Service, and
 it requires a free or paid WURFL Cloud account from ScientiaMobile:
 http://www.scientiamobile.com/cloud 
 
-Requirements
+Requirements 
 ------------
 
-* Ruby 1.9.2
+* Ruby 2.5.0 (1.9.2 for wurfl cloud client versions <= 1.0.2)
 * rubygems
 * json
 * rack
@@ -101,7 +101,7 @@ To detect a device you can use the wurfl_detect_device method including
 
 ```ruby
 include WurflCloud::Helper
-@device = wurfl_detect_device(env)
+@device = wurfl_detect_device(request.env)
 ```
 
 Then you can use the @device to get its id or its capabilities:
@@ -120,6 +120,8 @@ There is an example Ruby on Rails application in the `wurfl_cloud_client_example
 folder that demonstrates the usage of the WURFL Cloud Client for Ruby. Please
 refer to the wurfl_cloud.rb initializer and the demo_controller details to see
 how visitor's devices are detected.
+
+From version 1.1.0 on, WURFL cloud client example requires Rails 6.0.0 to work.
 
 Caching
 -------
@@ -213,7 +215,7 @@ invalidation: the current mtime is stored in the cache and used as a prefix
 for the device key such that when a new mtime is read from the WurflCloud
 API, it replaces the old key prefix and all the old keys are invalidated.
 
-**2015 ScientiaMobile Incorporated**
+**2015-2020 ScientiaMobile Incorporated**
 
 **All Rights Reserved.**
 
