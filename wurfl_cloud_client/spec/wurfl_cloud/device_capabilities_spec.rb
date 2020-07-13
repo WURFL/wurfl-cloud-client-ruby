@@ -32,7 +32,7 @@ describe WurflCloud::DeviceCapabilities do
     it "should return true from has_key? if the key is set" do
       key = String.random
       subject[key] = nil
-      subject.has_key?(key).should be_true 
+      subject.has_key?(key).should be_truthy
     end
     
     context "when merging" do
@@ -67,12 +67,12 @@ describe WurflCloud::DeviceCapabilities do
     
     context "the empty? method" do
       it "should return true if there are no capabilities defined" do
-        WurflCloud::DeviceCapabilities.new.empty?.should be_true
+        WurflCloud::DeviceCapabilities.new.empty?.should be_truthy
       end
       
       it "should return false if there are capabilities defined" do
         subject[String.random] = String.random
-        subject.empty?.should be_false
+        subject.empty?.should be_falsey
       end
     end
   end

@@ -39,7 +39,7 @@ describe "the client doing a real request" do
     end
 
     it "should have the device capabilities" do
-      @device['is_wireless_device'].should ==true
+      @device['advertised_device_os'].should == 'iOS'
     end
     
 end
