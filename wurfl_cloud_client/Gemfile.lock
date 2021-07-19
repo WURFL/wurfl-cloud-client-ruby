@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    wurfl_cloud_client (1.1.1)
+    wurfl_cloud_client (1.1.2)
       json
       rack
 
