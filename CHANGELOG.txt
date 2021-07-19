@@ -1,3 +1,7 @@
+1.1.2
+    - Updated dependecies to fix vulnerability issues.
+1.1.1
+    - Updated dependecies to fix vulnerability issues.
 1.1.0
     - Updated dependecies to fix vulnerability issues.
     - Minimum ruby version is now 2.5.0
